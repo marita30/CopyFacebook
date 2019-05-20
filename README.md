@@ -22,3 +22,7 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+## Deployment
+
+* Para agregar una nueva estructura de trabajo ejecutamos el siguiente codigo----> rails new (nombre del proyecto) --database=Postgresql
