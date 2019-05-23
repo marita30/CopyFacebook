@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   resources :posts
   root 'posts#index'
 
-  get "users/:id", to: "users#show", as: 'user'
+  get "/users/:id", to: "users#show"
 
   resources :posts do
     resources :likes
