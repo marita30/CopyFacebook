@@ -5,6 +5,9 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
   has_many :posts
 
+  attr_accessor :name, :email, :remember_me, :profile_attributes
+  has_one :profile
+  accepts_nested_attributes_for :profile
 
   # has_many :posts, dependent: :destroy
   # has_many :likes, dependent: :destroy
