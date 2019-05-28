@@ -1,5 +1,5 @@
 <div class="container text-center">
-  <%= image_tag @user.gravatar_url %><h1><%=@user.first_name%> <%=@user.last_name%></h1>
+  <%# image_tag @user.gravatar_url #%><h1><%=@user.name%> <%=@user.email%></h1>
 </div>
 
 <%= render 'posts/form' %>
