@@ -1,12 +1,33 @@
 html, body{
   margin: 0px;
   font-family: 'Open Sans', sans-serif;
-  background-color: white;
-  background-image: url(like.jpeg);
-  background-repeat:no-repeat;
-  
+  padding: 0px;
+  // background-color: white;
+  // background-image: url(like.jpeg);
+  // background-repeat:no-repeat;
+
 
 }
+.col-6{
+  height: 100em;
+  text-align: center;
+
+}
+.co-12, .col-sm-6, .col-md-8{
+      background-image: url(like.jpeg);
+      background-repeat: no-repeat;
+      height: 100em;
+  }
+
+.col-6, .col-md-4{
+  background-color: white;
+  height: 100em;
+}
+
+.row .no-gutters{
+  background-image: url(like.jpeg );
+}
+
 
 /*Cambiarle el color al url cuando ya es visitado el navegador por defecto lo pone en azul*/
 a,a:visited{
@@ -29,13 +50,13 @@ a,a:visited{
 .large-padding{
   padding: 8px 5px;
 }
-
-.container{
-  background-color: white;
-  float: right;
-  display:block;
-  width: 35%;
-  text-align: center;
-  height: 60em;
-  ;
-}
+//
+// .container{
+//   background-color: white;
+//   float: right;
+//   display:block;
+//   width: 100%;
+//   text-align: center;
+//   height: 60em;
+//   ;
+// }

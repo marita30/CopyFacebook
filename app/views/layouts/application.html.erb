@@ -7,6 +7,9 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
   </head>
 
   <body>
@@ -21,21 +24,23 @@
       </header>
 
 
-<div class="container">
+      <div class="row no-gutters">
+        <div class="col-12 col-sm-6 col-md-8">
 
-  <p class="notice"><%= notice %></p>
-  <p class="alert"><%= alert %></p>
-  <% if user_signed_in? %>
-  <div class="buttons">
-    <button class="button"><%= link_to('Logout', destroy_user_session_path, :method => :delete) %></button>
-  </div>
-  <% end %>
-  <%= link_to "Sign Up", new_user_registration_path %>
-  <%= link_to "Sign In", new_user_session_path %>
-  <%= yield %>
-    </div>
-
-
+        </div>
+        <div class="col-6 col-md-4" ">
+          <p class="notice"><%= notice %></p>
+          <p class="alert"><%= alert %></p>
+          <% if user_signed_in? %>
+          <div class="buttons">
+            <button class="button"><%= link_to('Logout', destroy_user_session_path, :method => :delete) %></button>
+          </div>
+          <% end %>
+          <%= link_to "Sign Up", new_user_registration_path %>
+          <%= link_to "Sign In", new_user_session_path %>
+          <%= yield %>
+        </div>
+      </div>
   </body>
 
 </html>
