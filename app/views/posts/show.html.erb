@@ -17,8 +17,20 @@
 
 <br>
 <h2> <%= @post.comments.count %> Comments</h2>
-      <%= render @post.comments %>
-      <h3>Add a Comments: </h3>
+<% @post.comments.each do |comment|
+%>
+<p>
+<%= comment.user.email %>
+</p>
+<p>
+<%= comment.body %>
+</p>
+<%
+
+end
+%>
+
+  <h3>Add a Comments: </h3>
       <%= render 'comments/form' %>
 <br>
 
