@@ -1,24 +1,2 @@
-<div class="container text-center">
-  <%# image_tag @user.image #%><h1><%=@user.name%> <%=@user.email%></h1>
-</div>
-
-<%# render 'posts/form' #%>
-
-<div class="container cards-container">
-  <% @posts.each do |post| %>
-    <div class="card">
-      <div class="card-body">
-        <div>
-          <p class="username"><%# image_tag post.user.image(:size => 30) #%>      <%=link_to post.user.name, user_path(post.user.id)%></p>
-          <p class="post-time"><%= post.created_at.strftime("%d/%m/%y") %></p>
-        </div>
-        <div class="message-container">
-          <p class="post-message"><%= post.content %></p>
-        </div>
-
-        <!--  -->
-        
-      </div>
-    </div>
-  <% end %>
-</div>
+<h1>Welcome to my profile</h1>
+<%= @user.email %>
