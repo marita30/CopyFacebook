@@ -17,16 +17,10 @@
 
 <br>
 <h2> <%= @post.comments.count %> Comments</h2>
-<% @post.comments.each do |comment|
+<% @post.comments.order('created_at DESC').each do |comment|
 %>
-<p>
-<%= comment.user.email %>
-</p>
-<p>
-<%= comment.body %>
-</p>
+  <%= render 'comments/comment', comment: comment %>
 <%
-
 end
 %>
 
