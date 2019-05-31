@@ -15,5 +15,18 @@
   <%= @post.content %>
 </p>
 
+<br>
+<h2> <%= @post.comments.count %> Comments</h2>
+<% @post.comments.order('created_at DESC').each do |comment|
+%>
+  <%= render 'comments/comment', comment: comment %>
+<%
+end
+%>
+
+  <h3>Add a Comments: </h3>
+      <%= render 'comments/form' %>
+<br>
+
 <%= link_to 'Edit', edit_post_path(@post) %> |
 <%= link_to 'Back', posts_path %>
