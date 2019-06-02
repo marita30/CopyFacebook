@@ -26,4 +26,8 @@ ChangeColor = () => {
     document.getElementById("thumb").style.color = "blue";
 };
 
-document.getElementById("like").addEventListener('click',ChangeColor,false);
+let l =  document.getElementById("like")
+
+if (l){
+    l.addEventListener("click", ChangeColor, false);
+}
