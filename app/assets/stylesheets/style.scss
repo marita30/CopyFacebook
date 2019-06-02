@@ -4,6 +4,66 @@ html, body{
   background-color: white;
   // background-image: url(like.jpeg);
   background-repeat:no-repeat;
+  // background-color: white;
+  // background-image: url(like.jpeg);
+  // background-repeat:no-repeat;
 
 
 }
+.col-6{
+  height: 100em;
+  text-align: center;
+
+}
+.co-12, .col-sm-6, .col-md-8{
+      background-image: url(like.jpeg);
+      background-repeat: no-repeat;
+      height: 100em;
+  }
+
+.col-6, .col-md-4{
+  background-color: white;
+  height: 100em;
+}
+
+.row .no-gutters{
+  background-image: url(like.jpeg );
+}
+
+
+/*Cambiarle el color al url cuando ya es visitado el navegador por defecto lo pone en azul*/
+a,a:visited{
+  color: inherit !important;
+  text-decoration: none;
+}
+
+.no-margin{
+  margin: 0px;
+}
+
+.be-red{
+  background-color: navy;
+}
+
+.white{
+  color: #ECF0F1;
+}
+
+.large-padding{
+  padding: 8px 5px;
+}
+//
+// .container{
+//   background-color: white;
+//   float: right;
+//   display:block;
+//   width: 100%;
+//   text-align: center;
+//   height: 60em;
+//   ;
+// }
+  // background-image: url(like.jpeg);
+//   
+
+
+// }
