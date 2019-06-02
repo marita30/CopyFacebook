@@ -14,3 +14,16 @@
 //= require activestorage
 //= require turbolinks
 //= require_tree .
+
+// $( "#a" ).click(function() {
+//     $('#myModal').modal('show');
+//   });
+//   $( "#a1" ).click(function() {
+//     $('#myModal').modal('show');
+//   });
+
+ChangeColor = () => {
+    document.getElementById("thumb").style.color = "blue";
+};
+
+document.getElementById("like").addEventListener('click',ChangeColor,false);
